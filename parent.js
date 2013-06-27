@@ -11,7 +11,7 @@
 		frameBorder : 0,
 		id : id
 	},
-	ie = navigator.userAgent.toLowerCase().indexOf('msie') > -1,
+	ie = (navigator.userAgent.toLowerCase().indexOf('msie') > -1) && !(navigator.userAgent.toLowerCase().indexOf('msie 10') > -1),
 	
 	// Sets the height of the iframe
 	setHeight = function (height) {
